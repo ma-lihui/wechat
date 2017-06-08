@@ -1,0 +1,33 @@
+page-tabs{
+  $color-tab:#19aa19;
+  .tabs-ios .tab-button[aria-selected=true],.tabs-md .tab-button[aria-selected=true] {
+    .tab-button-icon{
+      color: $color-tab;
+    }
+    color: $color-tab;
+  }
+
+  .tabs-ios .tab-button-icon{
+    font-size: 25px;
+  }
+
+  /*自定义图标
+   $name 名称
+   $val 默认值
+   $selectVal 选中值
+  */
+  @mixin customerIcon($name,$val,$selectVal){
+    .tab-button .ion-md-#{$name}:before,.tab-button .ion-md-#{$name}-outline:before,.tab-button .ion-ios-#{$name}-outline:before{
+      font-family: "iconfont" !important;
+      content: $val;
+    }
+    .tab-button[aria-selected=true] .ion-md-#{$name}:before,.tab-button[aria-selected=true] .ion-ios-#{$name}:before{
+      font-family: "iconfont" !important;
+      content: $selectVal;
+    }
+  }
+  @include customerIcon('chat','\e60e','\e609');
+  @include customerIcon('contacts','\e61d','\e605');
+  @include customerIcon('discover','\e608','\e60f');
+  @include customerIcon('me','\e614','\e65d');
+}

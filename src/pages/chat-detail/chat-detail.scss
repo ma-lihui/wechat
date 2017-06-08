@@ -1,0 +1,38 @@
+page-chat-detail {
+  ion-content .scroll-content{
+    background: $color-background;
+  }
+  //消息列表
+  .message-list{
+    .message-item{
+      margin: 10px;
+      width: auto;
+      max-width: 80%;
+      .input-wrapper{
+        display: none;
+      }
+      .left{
+        justify-content: flex-start;
+      }
+      .right{
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  ion-footer{
+    background: #f5f4f6;
+    form{
+      margin: 5px;
+      padding: 0;
+      input{
+        background: #fff !important;
+        border: 1px solid $color-border !important;
+        margin: 0 !important;
+        padding: 4px !important;
+        border-radius: 5px;
+        height: 3rem;
+      }
+    }
+  }
+}

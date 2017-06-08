@@ -1,0 +1,63 @@
+<ion-header class="header">
+  <ion-toolbar color="dark">
+    <ion-title>微信</ion-title>
+    <ion-buttons end>
+      <button (click)="presentPopover()" ion-button icon-only color="royal">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div (click)="openSeachModal()"  class="weui-search-bar" id="searchBar">
+    <form class="weui-search-bar__form">
+      <div class="weui-search-bar__box">
+        <i class="weui-icon-search"></i>
+        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+      </div>
+      <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+        <i class="weui-icon-search"></i>
+        <span>搜索</span>
+      </label>
+    </form>
+    <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+  </div>
+  <ion-list  no-lines class="main-list">
+    <ion-item-sliding>
+      <ion-item (click)="openDetailPage()">
+        <ion-thumbnail item-left>
+          <img src="../../assets/img/head_img/a8.jpg">
+        </ion-thumbnail>
+        <h2>微<span class="time">19:34</span></h2>
+        <p>hello<span></span></p>
+      </ion-item>
+      <ion-item-options side="right" class="options">
+        <button ion-button  class="mark">
+          标为已读
+        </button>
+        <button ion-button color="danger">
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="../../assets/img/head_img/a6.jpg">
+        </ion-thumbnail>
+        <h2>大王<span>14:24</span></h2>
+        <p>走去吃烤肉<span></span></p>
+      </ion-item>
+      <ion-item-options side="right"  class="options">
+        <button ion-button class="mark">
+          标为未读
+        </button>
+        <button ion-button color="danger">
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

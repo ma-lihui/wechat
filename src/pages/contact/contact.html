@@ -1,0 +1,99 @@
+<ion-header class="header">
+  <ion-toolbar color="dark">
+    <ion-title>通讯录</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <i class="iconfont icon-zengjialianxiren add-friend"></i>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div (click)="openSeachModal()"  class="weui-search-bar" id="searchBar">
+    <form class="weui-search-bar__form">
+      <div class="weui-search-bar__box">
+        <i class="weui-icon-search"></i>
+        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+      </div>
+      <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+        <i class="weui-icon-search"></i>
+        <span>搜索</span>
+      </label>
+    </form>
+    <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+  </div>
+  <ion-list no-lines class="main-list concat-list-top">
+    <ion-item>
+      <ion-avatar item-left class="thumbnail">
+        <img src="../../assets/img/wechat_icon/contact_top-friend-notify.png">
+      </ion-avatar>
+      <h2>新的朋友</h2>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="../../assets/img/wechat_icon/contact_top-addgroup.png">
+      </ion-avatar>
+      <h2>群聊</h2>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="../../assets/img/wechat_icon/contact_top-tag.png">
+      </ion-avatar>
+      <h2>标签</h2>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="../../assets/img/wechat_icon/contact_top-offical.png">
+      </ion-avatar>
+      <h2>公众号</h2>
+    </ion-item>
+  </ion-list>
+
+  <ion-list no-lines  class="main-list concat-list-main">
+    <ion-list-header>D</ion-list-header>
+    <ion-item>
+      <ion-avatar item-left class="thumbnail">
+        <img src="../../assets/img/head_img/a4.jpg">
+      </ion-avatar>
+      Danny
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left class="thumbnail">
+        <img src="../../assets/img/head_img/a6.jpg">
+      </ion-avatar>
+      大王
+    </ion-item>
+  </ion-list>
+  <ion-list no-lines  class="main-list concat-list-main">
+    <ion-list-header>T</ion-list-header>
+    <ion-item>
+      <ion-avatar item-left class="thumbnail">
+        <img src="../../assets/img/head_img/a3.jpg">
+      </ion-avatar>
+      Tonya
+    </ion-item>
+  </ion-list>
+  <ion-list no-lines  class="main-list concat-list-main">
+    <ion-list-header>W</ion-list-header>
+    <ion-item>
+      <ion-avatar item-left class="thumbnail">
+        <img src="../../assets/img/head_img/a8.jpg">
+      </ion-avatar>
+      微
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left class="thumbnail">
+        <img src="../../assets/img/head_img/a5.png">
+      </ion-avatar>
+      微信团队
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left class="thumbnail">
+        <img src="../../assets/img/head_img/b1.jpg">
+      </ion-avatar>
+      无名
+    </ion-item>
+  </ion-list>
+</ion-content>

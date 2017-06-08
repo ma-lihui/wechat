@@ -1,0 +1,23 @@
+page-chat {
+  .item{
+    span{
+      float: right;
+      color: #8e9093;
+      font-size: 1.3rem;
+    }
+    ion-thumbnail {
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+  .options{
+    button{
+      padding: 20px;
+    }
+    .mark{
+      background: $color-grey-5;
+      color: #fff;
+    }
+  }
+}

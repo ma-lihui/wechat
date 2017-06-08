@@ -1,0 +1,28 @@
+
+.pop-menu {
+  .popover-arrow{
+    display: block !important;
+    top: 50px !important;
+    left: calc(100% - 30px) !important;
+  }
+  .popover-content {
+    top: 58px !important;
+    left: calc(100% - 155px) !important;
+    width: 150px;
+
+    transform-origin:100% 0 !important;
+    transform: scale(0.1);
+    animation: fadeInRightUp 0.3s forwards;
+  }
+}
+@keyframes fadeInRightUp {
+  to {
+    transform-origin:100% 0;
+    transform: scale(1);
+  }
+}
+page-pop-over {
+  .list {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,44 @@
+page-discover {
+  .content{
+    background: $color-background;
+    .list-wrap{
+      width: 100%;
+      background: #fff;
+      border-top: 1px solid $color-border-2;
+      border-bottom: 1px solid $color-border-2;
+      margin-top: 18px;
+      padding: 1px 0;
+      .list{
+        margin-left: 16px;
+        ion-item{
+          margin: 0;
+          height: 44px;
+          min-height: 44px !important;
+          ion-avatar{
+            min-width: 20px !important;
+            min-height: 20px !important;
+            img{
+              border-radius: 0;
+              width: 28px !important;
+              height: 28px !important;
+            }
+          }
+          ion-icon{
+            float: right;
+            color: #d2d2d2;
+          }
+        }
+      }
+      .item-md{
+        ion-thumbnail {
+          min-width: 60px !important;
+          min-height: 60px !important;
+          img{
+            width: 60px !important;
+            height: 60px !important;
+          }
+        }
+      }
+    }
+  }
+}

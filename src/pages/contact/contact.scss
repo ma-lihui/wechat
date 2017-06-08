@@ -1,0 +1,20 @@
+page-contact {
+  .list{
+    .list-header{
+      margin: 0;
+      padding-left: 10px;
+      background: $color-background;
+      color:#9B9B9B;
+      min-height: 22px;
+      border: none !important;
+      .label{
+        margin: 0;
+      }
+    }
+  }
+  .item{
+    ion-avatar img{
+      border-radius: 0;
+    }
+  }
+}
