@@ -27530,10 +27530,38 @@ page-chat-detail ion-content .scroll-content {
   background: #EFEFF4;
 }
 
+page-chat-detail .message-list .head-img {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 0;
+}
+
+page-chat-detail .message-list .head-img img {
+  width: inherit;
+  height: inherit;
+}
+
+page-chat-detail .message-list .message-wrap {
+  margin: 0 10px;
+}
+
+page-chat-detail .message-list .message-wrap .content {
+  background: #fff;
+  padding: 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
 page-chat-detail .message-list .message-item {
   margin: 10px;
   width: auto;
   max-width: 80%;
+  background: none;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 page-chat-detail .message-list .message-item .input-wrapper {
@@ -27550,6 +27578,58 @@ page-chat-detail .message-list .message-item .right {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+
+page-chat-detail .message-list .right {
+  float: right;
+}
+
+page-chat-detail .message-list .right .content {
+  background: #a2e563;
+}
+
+page-chat-detail .message-list .right .content:before {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  right: 43px;
+  width: 0;
+  height: 0;
+  border: 8px solid;
+  border-color: transparent transparent transparent #e5e5e5;
+}
+
+page-chat-detail .message-list .right .content:after {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  right: 44px;
+  width: 0;
+  height: 0;
+  border: 8px solid;
+  border-color: transparent transparent transparent #a2e563;
+}
+
+page-chat-detail .message-list .left .content:before {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  width: 0;
+  height: 0;
+  border: 8px solid;
+  border-color: transparent #e5e5e5 transparent transparent;
+}
+
+page-chat-detail .message-list .left .content:after {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  left: 36px;
+  width: 0;
+  height: 0;
+  border: 8px solid;
+  border-color: transparent #fff transparent transparent;
 }
 
 page-chat-detail ion-footer {

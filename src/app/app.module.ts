@@ -31,6 +31,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     BrowserModule,
     IonicModule.forRoot(MyApp,
       {
+        mode:'ios',
         backButtonText: '返回',
       }
     )

@@ -4,10 +4,32 @@ page-chat-detail {
   }
   //消息列表
   .message-list{
+    .head-img{
+      img{
+        width: inherit;
+        height: inherit;
+      }
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      min-height: 40px;
+      margin: 0;
+    }
+    .message-wrap{
+      margin: 0 10px;
+      .content{
+        background: #fff;
+        padding: 8px;
+        border: 1px solid $color-border;
+        border-radius: 4px;
+      }
+    }
     .message-item{
       margin: 10px;
       width: auto;
       max-width: 80%;
+      background: none;
+      align-items: flex-start;
       .input-wrapper{
         display: none;
       }
@@ -16,6 +38,56 @@ page-chat-detail {
       }
       .right{
         justify-content: flex-end;
+      }
+    }
+    .right{
+      float: right;
+      .content{
+        background: #a2e563;
+        &:before{
+          content: ' ';
+          position: absolute;
+          top: 10px;
+          right: 43px;
+          width: 0;
+          height: 0;
+          border: 8px solid ;
+          border-color: transparent transparent transparent $color-border;
+        }
+        &:after{
+          content: ' ';
+          position: absolute;
+          top: 10px;
+          right: 44px;
+          width: 0;
+          height: 0;
+          border: 8px solid ;
+          border-color: transparent transparent transparent #a2e563;
+        }
+      }
+    }
+    .left{
+      .content{
+        &:before{
+          content: ' ';
+          position: absolute;
+          top: 10px;
+          left: 35px;
+          width: 0;
+          height: 0;
+          border: 8px solid ;
+          border-color: transparent $color-border transparent transparent;
+        }
+        &:after{
+          content: ' ';
+          position: absolute;
+          top: 10px;
+          left: 36px;
+          width: 0;
+          height: 0;
+          border: 8px solid ;
+          border-color: transparent #fff transparent transparent;
+        }
       }
     }
   }
